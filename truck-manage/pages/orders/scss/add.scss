@@ -1,0 +1,42 @@
+.orders-form {
+    max-width: 28rem; // max-w-md
+    margin: 2.5rem auto; // mx-auto and mt-10
+    background-color: #ffffff; // bg-white
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // shadow-md
+    border-radius: 0.5rem; // rounded-lg
+    padding: 1.5rem; // p-6
+  
+    h1 {
+      font-size: 1.5rem; // text-2xl
+      font-weight: bold; // font-bold
+      margin-bottom: 1rem; // mb-4
+    }
+  
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem; // space-y-4
+  
+      .input {
+        width: 100%; // w-full
+        border: 1px solid #d1d5db; // border
+        padding: 0.5rem; // p-2
+        border-radius: 0.25rem; // rounded
+      }
+  
+      .submit-button {
+        background-color: #3b82f6; // bg-blue-500
+        color: #ffffff; // text-white
+        padding: 0.5rem; // p-2
+        border-radius: 0.25rem; // rounded
+        cursor: pointer;
+        text-align: center;
+  
+        &:disabled {
+          background-color: #93c5fd; // lighter blue when disabled
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+  

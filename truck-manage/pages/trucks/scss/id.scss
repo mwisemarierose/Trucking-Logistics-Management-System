@@ -1,0 +1,58 @@
+// Variables
+$primary-green: #22c55e; // Tailwind's green-500
+$primary-gray: #6b7280; // Tailwind's gray-500
+
+// Container styles
+.container {
+  max-width: 32rem; // Tailwind's max-w-lg
+  margin: 2.5rem auto; // Tailwind's mx-auto mt-10
+  background-color: #ffffff; // Tailwind's bg-white
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Tailwind's shadow-md
+  border-radius: 0.5rem; // Tailwind's rounded-lg
+  padding: 1.5rem; // Tailwind's p-6
+}
+
+// Header styles
+.title {
+  font-size: 1.5rem; // Tailwind's text-2xl
+  font-weight: bold; // Tailwind's font-bold
+  margin-bottom: 1.5rem; // Tailwind's mb-6
+}
+
+// Paragraph styles
+.text-bold {
+  font-weight: bold;
+}
+
+// Button styles
+.btn {
+  padding: 0.5rem 1rem; // Tailwind's px-4 py-2
+  border-radius: 0.375rem; // Tailwind's rounded-md
+  text-align: center;
+  transition: background-color 0.2s;
+
+  &.edit {
+    background-color: $primary-green; // Tailwind's bg-green-500
+    color: #ffffff;
+
+    &:hover {
+      background-color: darken($primary-green, 10%);
+    }
+  }
+
+  &.back {
+    background-color: $primary-gray; // Tailwind's bg-gray-500
+    color: #ffffff;
+
+    &:hover {
+      background-color: darken($primary-gray, 10%);
+    }
+  }
+}
+
+// Flex container for buttons
+.button-group {
+  margin-top: 1.5rem; // Tailwind's mt-6
+  display: flex;
+  gap: 1rem; // Tailwind's space-x-4
+}

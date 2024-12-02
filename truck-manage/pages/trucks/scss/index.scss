@@ -1,0 +1,139 @@
+/* index.scss */
+
+/* Container styles */
+.page-container {
+    padding: 1rem;
+  
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      margin-left: 7rem;
+  
+      .add-truck-btn {
+        background-color: #3b82f6; /* Tailwind: bg-blue-400 */
+        color: white; /* Tailwind: text-white */
+        font-size: 1.125rem; /* Tailwind: text-lg */
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 0.5rem; /* Tailwind: rounded */
+        width: 6rem; /* Tailwind: w-24 */
+        text-decoration: none;
+  
+        &:hover {
+          background-color: #2563eb; /* Darker blue for hover state */
+        }
+      }
+    }
+  }
+  
+  /* DataTable custom styles */
+  .data-table {
+    .action-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+  
+      .view-link {
+        color: #3b82f6; /* Tailwind: text-blue-500 */
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+  
+      .edit-link {
+        color: #10b981; /* Tailwind: text-green-500 */
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+  
+      .delete-button {
+        color: #ef4444; /* Tailwind: text-red-500 */
+        cursor: pointer;
+  
+        &.disabled {
+          opacity: 0.5; /* Tailwind: opacity-50 */
+          cursor: not-allowed; /* Tailwind: cursor-not-allowed */
+        }
+  
+        &:hover:not(.disabled) {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  /* Action button styles */
+.action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  
+    /* View button */
+    .view-link {
+      color: #2563eb;
+      background-color: #dbeafe;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      font-weight: 500;
+  
+      &:hover {
+        background-color: #1e40af;
+        color: #ffffff;
+      }
+    }
+  
+    /* Edit button */
+    .edit-link {
+      color: #10b981;
+      background-color: #d1fae5;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      font-weight: 500;
+  
+      &:hover {
+        background-color: #065f46;
+        color: #ffffff;
+      }
+    }
+  
+    /* Delete button */
+    .delete-button {
+      color: #dc2626;
+      background-color: #fee2e2;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem; 
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #991b1b; 
+        color: #ffffff;
+      }
+  
+      &.disabled {
+        background-color: #f3f4f6; 
+        color: #9ca3af; 
+        cursor: not-allowed;
+      }
+    }
+  }
+  
+  .status-dropdown {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  

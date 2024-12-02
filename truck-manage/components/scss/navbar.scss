@@ -1,0 +1,56 @@
+.navbar {
+  background-color: #1f2937; 
+  height: 100vh;
+  width: 250px;
+  padding: 1rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  .navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar-item {
+    .navbar-link {
+      text-decoration: none;
+      color: #f3f4f6;
+      padding: 0.75rem 1rem;
+      border-radius: 4px; 
+      display: flex;
+      align-items: center;
+      gap: 0.5rem; 
+      transition: background-color 0.3s, color 0.3s; 
+
+      &:hover {
+        background-color: #374151; 
+        color: #ffffff;
+      }
+    }
+
+    &.active .navbar-link {
+      background-color: #2563eb; // Blue background for active link
+      color: #ffffff; // White text for contrast
+      font-weight: bold; // Make active link bold
+    }
+  }
+
+  .sign-out {
+    margin-top: auto; // Push the Sign Out button to the bottom
+    .navbar-link {
+      background-color: #ef4444; // Red for Sign Out
+      color: white;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #b91c1c; // Darker red on hover
+      }
+    }
+  }
+}

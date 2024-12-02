@@ -1,0 +1,121 @@
+{
+  "trucks": [
+    {
+      "plate_number": "RAB -12",
+      "capacity": "8000",
+      "status": "Delivering",
+      "id": "2db9"
+    },
+    {
+      "plate_number": "RAB -11",
+      "capacity": "600",
+      "status": "Available",
+      "id": "2da9"
+    },
+    {
+      "plate_number": "RAF -13",
+      "capacity": "10002",
+      "status": "Delivering",
+      "id": "3849"
+    },
+    {
+      "id": "152a",
+      "plate_number": "RAB -14",
+      "capacity": "787",
+      "status": "Delivering"
+    },
+    {
+      "id": "8c26",
+      "plate_number": "RAD -15",
+      "capacity": "30",
+      "status": "Delivering"
+    },
+    {
+      "id": "c5ee",
+      "plate_number": "RAD -78",
+      "capacity": "10",
+      "status": "Available"
+    }
+  ],
+  "drivers": [
+    {
+      "name": "chris",
+      "license_number": "2345",
+      "contact_number": "07845131323",
+      "id": "1",
+      "assigned_truck": "RAB -12"
+    },
+    {
+      "id": "2",
+      "name": "Smith",
+      "license_number": "DL1235",
+      "assigned_truck": "RAF -13",
+      "contact_number": "123-456-7891"
+    },
+    {
+      "id": "17fb",
+      "name": "Rose",
+      "license_number": "1234",
+      "contact_number": "07856444444",
+      "assigned_truck": "RAB -14"
+    },
+    {
+      "id": "1a2b",
+      "name": "Doe",
+      "license_number": "DL1235",
+      "assigned_truck": "RAD -15",
+      "contact_number": "123-456-7891"
+    },
+    {
+      "id": "79ac",
+      "name": "Rose",
+      "license_number": "677",
+      "contact_number": "78979999",
+      "assigned_truck": "RAD -78"
+    }
+  ],
+  "orders": [
+    {
+      "customer_name": "Jane Smiths",
+      "assigned_truck": "RAB -12",
+      "assigned_driver": "chris",
+      "order_status": "Completed",
+      "id": "1"
+    },
+    {
+      "customer_name": "Jane ",
+      "assigned_truck": "RAF -13",
+      "assigned_driver": "Smith",
+      "order_status": "Delivering",
+      "id": "2"
+    },
+    {
+      "customer_name": "Rose Pink",
+      "assigned_truck": "RAB -12",
+      "assigned_driver": "",
+      "order_status": "Pending",
+      "id": "3"
+    },
+    {
+      "id": "9530",
+      "customer_name": "Lara",
+      "assigned_truck": "RAD -15",
+      "assigned_driver": "Doe",
+      "order_status": "Delivering"
+    },
+    {
+      "id": "1345",
+      "customer_name": "koko",
+      "assigned_truck": "RAD -15",
+      "assigned_driver": "Doe",
+      "order_status": "Delivering"
+    },
+    {
+      "id": "06eb",
+      "customer_name": "Lara",
+      "assigned_truck": "RAD -15",
+      "assigned_driver": "Doe",
+      "order_status": "Delivering"
+    }
+  ]
+}

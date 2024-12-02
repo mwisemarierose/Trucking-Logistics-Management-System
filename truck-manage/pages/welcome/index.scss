@@ -1,0 +1,46 @@
+.welcome-page {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh; // Full height for better centering
+  
+    .welcome-message {
+      margin-bottom: 2rem; // Space between heading and additional content
+  
+      h1 {
+        font-size: 2rem; // Larger font for the system name
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #2563eb;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: #4b5563; // Gray color
+      }
+    }
+  
+    .login-message {
+      color: #4b5563; // Gray color
+      margin-top: 1rem;
+  
+      a {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #3b82f6; // Blue button
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 0.25rem;
+        transition: background-color 0.2s;
+  
+        &:hover {
+          background-color: #2563eb; // Darker blue on hover
+        }
+      }
+    }
+  }
+  

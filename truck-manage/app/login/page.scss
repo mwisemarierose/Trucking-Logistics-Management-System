@@ -1,0 +1,97 @@
+// Login.module.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+// Color palette
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$background-color: #f4f6f7;
+$text-color: #2c3e50;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-hover {
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+}
+
+.loginContainer {
+  @include flex-center;
+  min-height: 100vh;
+  background-color: $background-color;
+  padding: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.loginWrapper {
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.loginTitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  
+  span {
+    &:first-child {
+      font-size: 2.5rem;
+      color: $primary-color;
+      font-weight: 700;
+    }
+    
+    &:last-child {
+      font-size: 1.8rem;
+      color: $secondary-color;
+      margin-top: -10px;
+    }
+  }
+}
+
+.loginDescription {
+  margin-bottom: 30px;
+  
+  p {
+    color: $text-color;
+    font-size: 1rem;
+    opacity: 0.7;
+  }
+}
+
+.googleSignInButton {
+  @include flex-center;
+  @include button-hover;
+  
+  width: 100%;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  gap: 10px;
+  
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.googleIcon {
+  width: 24px;
+  height: 24px;
+}
