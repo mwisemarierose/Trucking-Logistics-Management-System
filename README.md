@@ -3,7 +3,7 @@
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/mwisemarierose/code-of-Africa`
+1. Clone the repository: `git clone https://github.com/mwisemarierose/Trucking-Logistics-Management-System`
 2. install dependencies : `npm i`
 3. Set up environment variables:
 4. Create a `.env` file in the root directory containing
